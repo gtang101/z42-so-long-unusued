@@ -4,7 +4,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 SRC = test.c
-LIB = -Lmlx -lmlx -framework OpenGL -framework AppKit
+LIB = mlx/libmlx.a -framework OpenGL -framework AppKit
 MINILIBX = mlx/
 
 all: $(NAME)
@@ -17,7 +17,7 @@ clean:
 	$(MAKE) clean -C $(MINILIBX)
 	rm -rf $(NAME)
 
-fclean: clean
+fclean:
 	$(MAKE) fclean -C $(MINILIBX)
 	rm -rf $(NAME)
 
