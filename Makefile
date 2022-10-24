@@ -1,4 +1,4 @@
-NAME = fractol
+NAME = so_long
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
